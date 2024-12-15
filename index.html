@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Abraham - Portfolio</title>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <input type="checkbox" id="darkmode-toggle" />
+    <label for="darkmode-toggle" aria-label="Toggle dark mode"></label>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home-section" id="home" data-aos="fade-up">
+        <div class="hero-content">
+            <img src="photo/Main.JPG" alt="Abraham Osorio" class="profile-image" data-aos="zoom-in">
+            <h1>Hi, I'm Abraham Osorio</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                I'm a passionate Computer Engineer thriving on creativity and innovation, with a background in backend development. I love building scalable systems and sharing my learning journey to inspire others. 
+            </p>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://github.com/abrahamoso" target="_blank" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://www.linkedin.com/in/abraham-o-249b25283/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="photo/profile.jpeg" alt="Profile Picture" />
+            </div>
+            <div class="about-text">
+                <h2>Hello, I'm Abrahm Osorio</h2>
+                <p>
+                    I created this blog and portfolio to pursue my aspirations and showcase my journey. It’s a stepping stone toward the goals I’ve always envisioned achieving.
+                    As a passionate developer, I'm driven to build meaningful projects that solve real-world problems. I thrive on exploring new technologies and continuously seek 
+                    opportunities to learn and grow. For that reason, I decided to document the projects I work on so others can be inspired or begin their own journey. 
+                    While I’m still learning and far from perfect, I believe it’s better to start than to never try at all.
+                <p>
+                    Just some quick intresting facts about me. Outside of school, I enjoy experimenting with Arduino boards,
+                    practicing jiu-jitsu, and creating new projects
+                </p>
+                <a href="#contact">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog" data-aos="fade-up">
+        <h1>Latest Posts</h1>
+        <div class="blog-posts">
+            <div class="blog-post" data-aos="fade-up">
+                <h2>FDA API Project Journey</h2>
+                <div class="post-meta">December 13, 2024</div>
+                <p>Exploring the development of my FDA API project and the challenges overcome...</p>
+                <a href="fda-blog.html" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post" data-aos="fade-up">
+                <h2>Getting Started with Robotics</h2>
+                <div class="post-meta">December 10, 2024</div>
+                <p>My journey into robotics and the exciting world of hardware development...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio" data-aos="fade-up">
+        <h1 class="portfolio__heading">My Projects</h1>
+        <div class="portfolio-grid">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+               
+                <h3>FDA API Project</h3>
+                <p>A comprehensive API for accessing and analyzing FDA data...</p>
+                <a href="https://github.com/abrahamoso/Drug_predicitons" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                
+                <h3>Drone Project</h3>
+                <p>Custom-built drone with autonomous navigation capabilities...</p>
+                <a href="https://github.com/abrahamoso" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact" data-aos="fade-up">
+        <h1>Get In Touch</h1>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="contact-details">
+                    <p>Feel free to reach out for collaborations or just a friendly chat about technology!</p>
+                    <div class="contact-social-links">
+                        <a href="https://github.com/abrahamoso" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/abraham-o-249b25283/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abraham Osorio. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
