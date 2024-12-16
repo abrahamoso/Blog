@@ -1,0 +1,210 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+    --bg-light: #ffffff;
+    --bg-dark: #242424;
+    --text-light: #242424;
+    --text-dark: #e0e0e0;
+    --accent-color: #3498db;
+    --transition-speed: 0.3s;
+    --gradient-primary: linear-gradient(to right, #0f1c24, #150541);
+    --box-shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow-sm);
+}
+
+.navbar nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color var(--transition-speed);
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Blog Post Full */
+.blog-post-full {
+    background: var(--gradient-primary);
+    color: #e0e0e0;
+    padding: 8rem 2rem 4rem;
+    min-height: 100vh;
+}
+
+.blog-header {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    font-weight: 5000;
+    background: linear-gradient(120deg, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.blog-header .post-meta {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.blog-content {
+    max-width: 2400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.blog-content h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.blog-content p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.blog-content ul {
+    color: #e0e0e0;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.project-link {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.project-link a:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar nav {
+        gap: 1rem;
+    }
+    
+    .blog-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .blog-content {
+        padding: 2rem;
+    }
+    
+    .blog-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post-full {
+        padding: 6rem 1.5rem 3rem;
+    }
+}
+.image-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.blog-image {
+    max-width: 30%; /* This ensures the images take up equal space with some gap */
+    height: auto;
+}

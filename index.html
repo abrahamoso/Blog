@@ -14,7 +14,7 @@
     <label for="darkmode-toggle" aria-label="Toggle dark mode"></label>
 
     <!-- Navbar -->
-    <header class="navbar">
+    <header class="navbar index-navbar">
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -25,14 +25,14 @@
     </header>
 
     <!-- Home Section -->
-    <section class="home-section" id="home" data-aos="fade-up">
-        <div class="hero-content">
-            <img src="photo/Main.JPG" alt="Abraham Osorio" class="profile-image" data-aos="zoom-in">
-            <h1>Hi, I'm Abraham Osorio</h1>
-            <p data-aos="fade-up" data-aos-delay="200">
+    <section class="home-section" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <img src="photo/Drawingprofile.jpg" alt="Abraham Osorio" class="profile-image" data-aos="zoom-in">
+            <h1 data-aos="fade-up" data-aos-delay="200">Hi, I'm Abraham Osorio</h1>
+            <p data-aos="fade-up" data-aos-delay="400">
                 I'm a passionate Computer Engineer thriving on creativity and innovation, with a background in backend development. I love building scalable systems and sharing my learning journey to inspire others. 
             </p>
-            <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+            <div class="social-links" data-aos="fade-up" data-aos-delay="600">
                 <a href="https://github.com/abrahamoso" target="_blank" aria-label="GitHub Profile">GitHub</a>
                 <a href="https://www.linkedin.com/in/abraham-o-249b25283/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
             </div>
@@ -41,59 +41,57 @@
 
     <!-- About Section -->
     <section class="about-section" id="about">
-        <h1>About Me</h1>
+        <h1 data-aos="fade-up">About Me</h1>
         <div class="about-content">
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-right" data-aos-delay="200">
                 <img src="photo/profile.jpeg" alt="Profile Picture" />
             </div>
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-left" data-aos-delay="400">
                 <h2>Hello, I'm Abrahm Osorio</h2>
                 <p>
-                    I created this blog and portfolio to pursue my aspirations and showcase my journey. It’s a stepping stone toward the goals I’ve always envisioned achieving.
+                    I created this blog and portfolio to pursue my aspirations and showcase my journey. It's a stepping stone toward the goals I've always envisioned achieving.
                     As a passionate developer, I'm driven to build meaningful projects that solve real-world problems. I thrive on exploring new technologies and continuously seek 
                     opportunities to learn and grow. For that reason, I decided to document the projects I work on so others can be inspired or begin their own journey. 
-                    While I’m still learning and far from perfect, I believe it’s better to start than to never try at all.
+                    While I'm still learning and far from perfect, I believe it's better to start than to never try at all.
+                </p>
                 <p>
                     Just some quick intresting facts about me. Outside of school, I enjoy experimenting with Arduino boards,
                     practicing jiu-jitsu, and creating new projects
                 </p>
-                <a href="#contact">Let's Connect</a>
+                <a href="#contact" data-aos="fade-up" data-aos-delay="600">Let's Connect</a>
             </div>
         </div>
     </section>
-    
 
     <!-- Blog Section -->
-    <section class="blog-section" id="blog" data-aos="fade-up">
-        <h1>Latest Posts</h1>
+    <section class="blog-section" id="blog">
+        <h1 data-aos="fade-up">Latest Posts</h1>
         <div class="blog-posts">
-            <div class="blog-post" data-aos="fade-up">
+            <div class="blog-post" data-aos="fade-up" data-aos-delay="200">
                 <h2>FDA API Project Journey</h2>
                 <div class="post-meta">December 13, 2024</div>
                 <p>Exploring the development of my FDA API project and the challenges overcome...</p>
                 <a href="fda-blog.html" class="read-more">Read More</a>
             </div>
-            <div class="blog-post" data-aos="fade-up">
+            <div class="blog-post" data-aos="fade-up" data-aos-delay="400">
                 <h2>Getting Started with Robotics</h2>
                 <div class="post-meta">December 10, 2024</div>
                 <p>My journey into robotics and the exciting world of hardware development...</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="WIP.html" class="read-more">Read More</a>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio" data-aos="fade-up">
-        <h1 class="portfolio__heading">My Projects</h1>
+    <section class="portfolio" id="portfolio">
+        <h1 class="portfolio__heading" data-aos="fade-up">My Projects</h1>
         <div class="portfolio-grid">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-               
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                 <h3>FDA API Project</h3>
                 <p>A comprehensive API for accessing and analyzing FDA data...</p>
                 <a href="https://github.com/abrahamoso/Drug_predicitons" target="_blank">View Project</a>
             </div>
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                 <h3>Drone Project</h3>
                 <p>Custom-built drone with autonomous navigation capabilities...</p>
                 <a href="https://github.com/abrahamoso" target="_blank">View Project</a>
@@ -102,10 +100,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section" id="contact" data-aos="fade-up">
-        <h1>Get In Touch</h1>
+    <section class="contact-section" id="contact">
+        <h1 data-aos="fade-up">Get In Touch</h1>
         <div class="contact-content">
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
                 <h2>Contact Information</h2>
                 <div class="contact-details">
                     <p>Feel free to reach out for collaborations or just a friendly chat about technology!</p>
@@ -115,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="400">
                 <h2>Send a Message</h2>
                 <form>
                     <div class="form-group">
@@ -146,7 +144,8 @@
     <script>
         AOS.init({
             duration: 1000,
-            once: true
+            once: true,
+            offset: 100
         });
     </script>
     <script src="script.js"></script>

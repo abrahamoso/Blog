@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>FDA API Project Journey - Abraham Osorio</title>
 </head>
 <body>
-    <!-- Reuse your existing navbar -->
+    <!-- Navbar -->
     <header class="navbar">
         <nav>
             <a href="index.html#home">Home</a>
@@ -21,43 +21,73 @@
     </header>
 
     <article class="blog-post-full">
-        <div class="blog-header">
-            <h1>FDA API Project Journey</h1>
+        <div class="blog-header" data-aos="fade-up">
+            <h1>My First API Project: How I Got Started in Software Development</h1>
             <div class="post-meta">December 13, 2024</div>
         </div>
         
-        <div class="blog-content">
-            <p>My journey into software development began with a project that combined healthcare and technology - the FDA Drug Information API project. As my first coding venture, it taught me valuable lessons about real-world application development.</p>
+        <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+            <p data-aos="fade-up" data-aos-delay="300">Starting something new is always intimidating, and my first API project was no exception. I dove headfirst into a project that combined healthcare and technology: building an FDA Drug Information API. Like most beginners, I started with a blank screen and a million questions.
+
+                The enormity of the project quickly became clear: I couldn’t do it alone. What followed was a journey of mentorship, trial and error, and some invaluable lessons about growth and resilience. Here’s what I learned—and what you can take away if you’re just getting started, too.
+                </p>
             
-            <h2>The Beginning</h2>
-            <p>Starting from scratch, I decided to create something meaningful that could potentially help people make informed decisions about their medications. The OpenFDA API provided a perfect opportunity to work with real healthcare data.</p>
+            <h2 data-aos="fade-up" data-aos-delay="400">Finding A Mentor</h2>
+            <p data-aos="fade-up" data-aos-delay="450"> If you’re new to coding, one of the best things you can do is find a mentor. That’s what I did through "Mentorcruise," a platform that connects aspiring developers with experienced engineers.
+
+                At first, I hesitated—imposter syndrome made me question whether I was even ready to ask for help. Scrolling through profiles of engineers from top tech companies, I thought, "No way I should even try this, right?" But after weeks of self-doubt, I finally took the plunge and connected with a mentor.
+                
+                It was the best decision I could’ve made. Through mentoring sessions, I learned about essential tools like Git, how to structure a project, and how to handle feedback without feeling discouraged. If you’re considering mentorship, don’t wait—it’s an investment in yourself that pays off in ways you can’t imagine.
+                
+                </p>
             
-            <h2>Technical Challenges</h2>
-            <p>As a beginner, I faced several challenges:</p>
-            <ul>
-                <li>Learning to work with APIs and handle JSON responses</li>
+            <h2 data-aos="fade-up" data-aos-delay="500">Overcoming Technical Challenges</h2>
+            <p data-aos="fade-up" data-aos-delay="550">One of the biggest challenges of starting this project was feeling completely out of my depth. I vividly remember one of my first mentoring sessions when my mentor asked if I knew how to use Git. When I admitted I didn’t, he patiently walked me through the basics of version control.
+
+                At the time, I interpreted his directness as frustration with my lack of knowledge. But looking back, his straightforward approach was exactly what I needed. It taught me that the key to growth is embracing the discomfort of learning and being open to feedback—even when it stings.
+                
+                This project forced me to confront a lot of my fears about starting something new, especially the fear of looking foolish. I learned that it’s okay not to know everything right away. What matters most is showing up, asking questions, and taking that first step.</p>
+    
+           
+           <h1 data-aos="fade-up" data-aos-delay="550">For example: </h1>
+           <ul data-aos="fade-up" data-aos-delay="600">
+                <li>Learning to work better with multiple APIs and handle JSON responses</li>
                 <li>Implementing proper error handling for user inputs</li>
                 <li>Creating a user-friendly interface for displaying complex medical information</li>
             </ul>
             
-            <h2>Key Learnings</h2>
-            <p>This project taught me fundamental programming concepts:</p>
-            <ul>
-                <li>API integration and data parsing</li>
-                <li>User input validation</li>
-                <li>Error handling and user feedback</li>
-                <li>Basic UI/UX principles</li>
+
+
+            <h2 data-aos="fade-up" data-aos-delay="550">Key Lessons for Beginners</h2>
+            <p data-aos="fade-up" data-aos-delay="550">One of the most valuable lessons I learned from this project was how to work with APIs.</p>
+
+            <h3 data-aos="fade-up" data-aos-delay="550">What is an API?</h3>
+            <p data-aos="fade-up" data-aos-delay="550">For those unfamiliar, an API (Application Programming Interface) is like a bridge that allows two software systems to communicate. Imagine you’re at a restaurant: you (the user) place an order with the waiter (the API), who communicates with the kitchen (the server). The kitchen prepares the food (the data) and the waiter delivers it back to you.
+
+                APIs are everywhere in modern apps, from weather forecasts to social media. For this project, I worked with the FDA’s API to retrieve drug information.</p>
+                
+                <h3 data-aos="fade-up" data-aos-delay="550">Learning Postman Basics</h3>
+                <p data-aos="fade-up" data-aos-delay="550">To test API requests, I used a tool called Postman. It became an essential part of my workflow, acting as a sandbox where I could experiment with API calls and responses. Here’s what I learned to do:</p>
+                <ul data-aos="fade-up" data-aos-delay="550">
+                <li>Send GET requests to retrieve data.</li>
+                <li>Use POST requests to send new to a server.</li>
+                <li>Experiment with DELETE requests to remove data.</li>
+            </ul>
+            <p data-aos="fade-up" data-aos-delay="550">While I’m not perfect at using Postman yet, I now understand the basics. This tool helped me bridge the gap between theory and practical application, making APIs feel far less intimidating.</p>
+            
+            <h2 data-aos="fade-up" data-aos-delay="550">Future Improvements and Next Steps</h2>
+            <p data-aos="fade-up" data-aos-delay="550">Though I’ve moved on from this project, reflecting on it has helped me shape my future goals. Here’s what I’ll take into my next projects:</p>
+            <ul data-aos="fade-up" data-aos-delay="550">
+                <li>Prioritizing Code Organization: Starting with a plan for clean, efficient code saves time in the long run.</li>
+                <li>Focusing on User Experience: I’ll prioritize creating interfaces that make complex data easy to understand.</li>
+                <li>Mastering API Workflows: I want to explore advanced API integration techniques, like authentication and handling complex responses.</li>
             </ul>
             
-            <h2>Future Improvements</h2>
-            <p>Looking back, there are several improvements I'd like to make:</p>
-            <ul>
-                <li>Enhanced user interface with modern design principles</li>
-                <li>More comprehensive drug interaction analysis</li>
-                <li>Additional data visualization features</li>
-            </ul>
-            
-            <div class="project-link">
+            <div class="image-container" data-aos="fade-up" data-aos-delay="550">
+                <img src="photo/API1.PNG" alt="API Project" class="blog-image">
+                <img src="photo/API2.PNG" alt="API Project" class="blog-image">
+            </div>
+            <div class="project-link" data-aos="fade-up" data-aos-delay="550">
                 <p>View the project on GitHub: <a href="https://github.com/abrahamoso/Drug_predicitons" target="_blank">FDA Drug Predictions Project Repository</a></p>
             </div>
         </div>
@@ -73,7 +103,8 @@
     <script>
         AOS.init({
             duration: 1000,
-            once: true
+            once: true,
+            offset: 100
         });
     </script>
 </body>

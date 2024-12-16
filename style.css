@@ -30,18 +30,22 @@ body {
     transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-
-
+/* Navigation - Updated */
 /* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var( --gradient-primary md);
+    background: rgba(255, 255, 255, 0.1); /* Default semi-transparent background */
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     z-index: 1000;
     box-shadow: var(--box-shadow-sm);
+}
+
+.index-navbar {
+    background: rgba(0, 0, 0, 0.2) !important;  /* Darker semi-transparent for index page */
+    backdrop-filter: blur(10px);
 }
 
 .navbar nav {
@@ -55,7 +59,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: var( --box-shadow-sm);
+    color: #ffffff;
     font-size: 1.1rem;
     font-weight: 500;
     transition: color var(--transition-speed);
@@ -78,7 +82,7 @@ body {
     width: 100%;
 }
 
-/* Home Section */
+/* Home Section - Updated padding */
 .home-section {
     background: var(--gradient-primary);
     color: #ffffff;
@@ -86,7 +90,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 2rem 5rem;
+    padding: 4rem 2rem 5rem;
 }
 
 .hero-content {
@@ -340,10 +344,11 @@ body {
     color: #e0e0e0;
     padding: 8rem 2rem 4rem;
     min-height: 100vh;
+    padding-top: 4rem;
 }
 
 .blog-header {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto 3rem;
     text-align: center;
 }
