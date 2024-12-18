@@ -6,7 +6,7 @@
     --text-dark: #e0e0e0;
     --accent-color: #3498db;
     --transition-speed: 0.3s;
-    --gradient-primary: linear-gradient(to right, #0f1c24, #150541);
+    --gradient-primary: linear-gradient(to right, #0f1c24, #969090);
     --box-shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
     --box-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
